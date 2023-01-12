@@ -8,18 +8,16 @@
 class Fixed
 {
     public:
-        Fixed(void);
-        Fixed(int const value);
-        Fixed(float const value);
-        ~Fixed(void);
-        Fixed(Fixed const &another);
-        Fixed &operator=(const Fixed &other);
-
-
+        Fixed();
+        ~Fixed();
+        Fixed (const Fixed &fixed);
+        Fixed (const int val);
+        Fixed (const float val);
+        Fixed & operator =(const Fixed &fixed);
         int getRawBits( void ) const;
-        void setRawBits ( int const raw );
-        float toFloat( void ) const;
-        int toInt( void ) const; 
+        void setRawBits (int const raw );
+        int toInt() const;
+        float toFloat() const;
 
     private:
         int     value;
