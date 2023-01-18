@@ -34,7 +34,7 @@ Fixed &Fixed::operator=(const Fixed &other) {
 }
 
 int Fixed::getRawBits( void ) const {
-    std::cout << "getRawBits member function called" << std::endl;
+    // std::cout << "getRawBits member function called" << std::endl;
     return (this->value);
 }
 
